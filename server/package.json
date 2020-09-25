@@ -1,5 +1,5 @@
 {
-  "name": "@altv/types-server",
+  "name": "@altvdrp/types-server",
   "version": "1.4.4",
   "description": "This package contains types definitions for alt:V server-side module.",
   "types": "index.d.ts",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/altmp/altv-types.git"
+    "url": "git+https://github.com/DRPFramework/altv-types-drp.git"
   },
   "keywords": [
     "altmp",
@@ -25,10 +25,10 @@
     "gta5",
     "gtav"
   ],
-  "author": "altMP Team",
+  "author": "altMP Team, Draww",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/altmp/altv/issues"
   },
-  "homepage": "https://github.com/altmp/altv-types#readme"
+  "homepage": "https://github.com/DRPFramework/altv-types-drp#readme"
 }
