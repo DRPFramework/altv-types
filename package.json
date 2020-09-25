@@ -1,7 +1,7 @@
 {
   "name": "altv-types-drp",
   "version": "1.0.0",
-  "description": "This repository contains types definitions for alt:V JavaScript modules.",
+  "description": "This repository contains types definitions for alt:V JavaScript modules (Adapted for DRP)",
   "main": "",
   "private": true,
   "workspaces": [
