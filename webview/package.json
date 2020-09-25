@@ -1,5 +1,5 @@
 {
-  "name": "@altvdrp/types-webview",
+  "name": "@altv-drp/types-webview",
   "version": "1.0.2",
   "description": "This package contains types definitions for alt:V client-side WebView.",
   "types": "index.d.ts",
