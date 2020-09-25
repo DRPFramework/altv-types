@@ -8,7 +8,8 @@
     "client",
     "webview",
     "natives",
-    "server"
+    "server",
+    "drp"
   ],
   "scripts": {
     "test": "yarn workspaces run test",

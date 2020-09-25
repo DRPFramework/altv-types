@@ -2,7 +2,7 @@ name: Publish packages
 on:
   push:
     branches:
-      - master
+      - drp
 jobs:
   client:
     name: Publish client
@@ -194,7 +194,7 @@ jobs:
         run: npm run build
         working-directory: ./type2docfx
       - name: Generate YAML
-        run: node "./type2docfx/dist/main.js" "./docs/output.json" "./docs/api" --basePath "." --sourceUrl "https://github.com/altmp/altv-types" --sourceBranch "master" --disableAlphabetOrder
+        run: node "./type2docfx/dist/main.js" "./docs/output.json" "./docs/api" --basePath "." --sourceUrl "https://github.com/DRPFramework/altv-types-drp" --sourceBranch "drp" --disableAlphabetOrder
       - name: Run generator
         run: dotnet run -p "./docfx/src/docfx/docfx.csproj" "./docs/docfx.json"
       - name: Pack files
