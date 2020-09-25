@@ -1,5 +1,5 @@
 {
-  "name": "altv-types",
+  "name": "altv-types-drp",
   "version": "1.0.0",
   "description": "This repository contains types definitions for alt:V JavaScript modules.",
   "main": "",
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/altmp/altv-types.git"
   },
-  "author": "altMP Team",
+  "author": "altMP Team, Draww",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/altmp/altv/issues"
