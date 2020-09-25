@@ -310,8 +310,14 @@ declare module "alt-server" {
 
     public spawn(x: number, y: number, z: number, delay: number): void;
 
+    /**
+     * WARN: Only DRP Main Resource
+     */
     public ban(): void;
 
+    /**
+     * WARN: Only DRP Main Resource
+     */
     public isBanned(): boolean;
   }
 
