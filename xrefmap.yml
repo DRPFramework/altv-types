@@ -753,13 +753,13 @@ references:
   name: nextTick(() => void)
   href: api/alt-client.html#_altmp_altv_types_alt_client_nextTick
 - uid: '@altmp/altv-types.alt-client.off'
-  name: 'off(string, (args: any[]) => void)'
+  name: 'off(string, (...args: any[]) => void)'
   href: api/alt-client.html#_altmp_altv_types_alt_client_off
 - uid: '@altmp/altv-types.alt-client.offServer'
-  name: 'offServer(string, (args: any[]) => void)'
+  name: 'offServer(string, (...args: any[]) => void)'
   href: api/alt-client.html#_altmp_altv_types_alt_client_offServer
 - uid: '@altmp/altv-types.alt-client.on'
-  name: 'on(string, (args: any[]) => void)'
+  name: 'on(string, (...args: any[]) => void)'
   href: api/alt-client.html#_altmp_altv_types_alt_client_on
 - uid: '@altmp/altv-types.alt-client.on_1'
   name: 'on("anyResourceError", (resourceName: string) => void)'
@@ -798,7 +798,7 @@ references:
   name: on("connectionComplete", () => void)
   href: api/alt-client.html#_altmp_altv_types_alt_client_on_4
 - uid: '@altmp/altv-types.alt-client.on_5'
-  name: 'on("consoleCommand", (name: string, args: string[]) => void)'
+  name: 'on("consoleCommand", (name: string, ...args: string[]) => void)'
   href: api/alt-client.html#_altmp_altv_types_alt_client_on_5
 - uid: '@altmp/altv-types.alt-client.on_6'
   name: on("disconnect", () => void)
@@ -813,7 +813,7 @@ references:
   name: 'on("keydown", (key: number) => void)'
   href: api/alt-client.html#_altmp_altv_types_alt_client_on_9
 - uid: '@altmp/altv-types.alt-client.onServer'
-  name: 'onServer(string, (args: any[]) => void)'
+  name: 'onServer(string, (...args: any[]) => void)'
   href: api/alt-client.html#_altmp_altv_types_alt_client_onServer
 - uid: '@altmp/altv-types.alt-client.Player'
   name: Player
@@ -1024,10 +1024,10 @@ references:
   href: api/alt-client.WebView.html#_altmp_altv_types_alt_client_WebView_isVisible
   fullName: isVisible
 - uid: '@altmp/altv-types.alt-client.WebView.off'
-  name: 'off(string, (args: any[]) => void)'
+  name: 'off(string, (...args: any[]) => void)'
   href: api/alt-client.WebView.html#_altmp_altv_types_alt_client_WebView_off
 - uid: '@altmp/altv-types.alt-client.WebView.on'
-  name: 'on(string, (args: any[]) => void)'
+  name: 'on(string, (...args: any[]) => void)'
   href: api/alt-client.WebView.html#_altmp_altv_types_alt_client_WebView_on
 - uid: '@altmp/altv-types.alt-client.WebView.on_1'
   name: on("load", () => void)
@@ -1357,13 +1357,13 @@ references:
   name: nextTick(() => void)
   href: api/alt-server.html#_altmp_altv_types_alt_server_nextTick
 - uid: '@altmp/altv-types.alt-server.off'
-  name: 'off(string, (args: any[]) => void)'
+  name: 'off(string, (...args: any[]) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_off
 - uid: '@altmp/altv-types.alt-server.offClient'
-  name: 'offClient(string, (args: any[]) => void)'
+  name: 'offClient(string, (...args: any[]) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_offClient
 - uid: '@altmp/altv-types.alt-server.on'
-  name: 'on(string, (args: any[]) => void)'
+  name: 'on(string, (...args: any[]) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on
 - uid: '@altmp/altv-types.alt-server.on_1'
   name: 'on("anyResourceError", (resourceName: string) => void)'
@@ -1429,7 +1429,7 @@ references:
   name: 'on("anyResourceStop", (resourceName: string) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_3
 - uid: '@altmp/altv-types.alt-server.on_4'
-  name: 'on("consoleCommand", (args: string[]) => void)'
+  name: 'on("consoleCommand", (...args: string[]) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_4
 - uid: '@altmp/altv-types.alt-server.on_5'
   name: 'on("entityEnterColshape", (colshape: Colshape, entity: Entity) => void)'
@@ -1447,7 +1447,7 @@ references:
   name: 'on("playerChangedVehicleSeat", (player: Player, vehicle: Vehicle, oldSeat: number, newSeat: number) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_on_9
 - uid: '@altmp/altv-types.alt-server.onClient'
-  name: 'onClient(string, (player: Player, args: any[]) => void)'
+  name: 'onClient(string, (player: Player, ...args: any[]) => void)'
   href: api/alt-server.html#_altmp_altv_types_alt_server_onClient
 - uid: '@altmp/altv-types.alt-server.Player'
   name: Player
@@ -1468,6 +1468,9 @@ references:
   name: authToken
   href: api/alt-server.Player.html#_altmp_altv_types_alt_server_Player_authToken
   fullName: authToken
+- uid: '@altmp/altv-types.alt-server.Player.ban'
+  name: ban()
+  href: api/alt-server.Player.html#_altmp_altv_types_alt_server_Player_ban
 - uid: '@altmp/altv-types.alt-server.Player.currentWeapon'
   name: currentWeapon
   href: api/alt-server.Player.html#_altmp_altv_types_alt_server_Player_currentWeapon
@@ -1514,6 +1517,9 @@ references:
   name: ip
   href: api/alt-server.Player.html#_altmp_altv_types_alt_server_Player_ip
   fullName: ip
+- uid: '@altmp/altv-types.alt-server.Player.isBanned'
+  name: isBanned()
+  href: api/alt-server.Player.html#_altmp_altv_types_alt_server_Player_isBanned
 - uid: '@altmp/altv-types.alt-server.Player.kick'
   name: kick(string)
   href: api/alt-server.Player.html#_altmp_altv_types_alt_server_Player_kick

@@ -135,7 +135,7 @@
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L131">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L131">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_id" data-uid="@altmp/altv-types.alt-server.Entity.id">id
   <span class="release-stage public"></span>
@@ -166,7 +166,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L148">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L148">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_model" data-uid="@altmp/altv-types.alt-server.Entity.model">model
   <span class="release-stage public"></span>
@@ -195,9 +195,12 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_model_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Only setter accepts string or number as input, getter returns value as number.</p>
+</div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L141">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L141">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_netOwner" data-uid="@altmp/altv-types.alt-server.Entity.netOwner">netOwner
   <span class="release-stage public"></span>
@@ -226,9 +229,16 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_netOwner_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Network owner is responsible for syncing entity with the server.
+It changes when actual network owner passes the migration range,
+then the new one is determined based on distance from the entity
+(if entity is a vehicle, then the driver will take priority for becoming network owner).
+Disabling migration range will stop this process from happening until turned on again.</p>
+</div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L155">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L155">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_rot" data-uid="@altmp/altv-types.alt-server.Entity.rot">rot
   <span class="release-stage public"></span>
@@ -257,11 +267,14 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_rot_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Values are provided in radians .</p>
+</div>
   <h3 id="methods">Methods
   </h3>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L201">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L201">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_deleteStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.deleteStreamSyncedMeta">deleteStreamSyncedMeta(string)
   <span class="release-stage public"></span>
@@ -289,7 +302,8 @@
         <td><span class="xref">string</span></td>
         <td><em>key</em></td>
         <td>
-          
+          <p>The key of the value to remove.</p>
+
           
         </td>
       </tr>
@@ -297,7 +311,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L170">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L170">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_deleteSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.deleteSyncedMeta">deleteSyncedMeta(string)
   <span class="release-stage public"></span>
@@ -325,7 +339,8 @@
         <td><span class="xref">string</span></td>
         <td><em>key</em></td>
         <td>
-          
+          <p>The key of the value to remove.</p>
+
           
         </td>
       </tr>
@@ -333,7 +348,7 @@
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L209">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L209">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_getStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.getStreamSyncedMeta">getStreamSyncedMeta(string)
   <span class="release-stage public"></span>
@@ -361,7 +376,8 @@
         <td><span class="xref">string</span></td>
         <td><em>key</em></td>
         <td>
-          
+          <p>The key of the value to get.</p>
+
           
         </td>
       </tr>
@@ -378,13 +394,14 @@
     <tbody>
       <tr>
         <td><span class="xref">any</span></td>
-        <td></td>
+        <td><p>Dynamic value associated with the specified key.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L178">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L178">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_getSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.getSyncedMeta">getSyncedMeta(string)
   <span class="release-stage public"></span>
@@ -412,7 +429,8 @@
         <td><span class="xref">string</span></td>
         <td><em>key</em></td>
         <td>
-          
+          <p>The key of the value to get.</p>
+
           
         </td>
       </tr>
@@ -429,13 +447,14 @@
     <tbody>
       <tr>
         <td><span class="xref">any</span></td>
-        <td></td>
+        <td><p>Dynamic value associated with the specified key.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L217">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L217">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_hasStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.hasStreamSyncedMeta">hasStreamSyncedMeta(string)
   <span class="release-stage public"></span>
@@ -463,7 +482,8 @@
         <td><span class="xref">string</span></td>
         <td><em>key</em></td>
         <td>
-          
+          <p>The key of the value to locate.</p>
+
           
         </td>
       </tr>
@@ -480,13 +500,14 @@
     <tbody>
       <tr>
         <td><span class="xref">boolean</span></td>
-        <td></td>
+        <td><p>Return is dependent on whether element associated with the specified key is stored.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L186">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L186">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_hasSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.hasSyncedMeta">hasSyncedMeta(string)
   <span class="release-stage public"></span>
@@ -514,7 +535,8 @@
         <td><span class="xref">string</span></td>
         <td><em>key</em></td>
         <td>
-          
+          <p>The key of the value to locate.</p>
+
           
         </td>
       </tr>
@@ -531,13 +553,14 @@
     <tbody>
       <tr>
         <td><span class="xref">boolean</span></td>
-        <td></td>
+        <td><p>Return is dependent on whether element associated with the specified key is stored.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L254">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L254">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_resetNetOwner" data-uid="@altmp/altv-types.alt-server.Entity.resetNetOwner">resetNetOwner(boolean)
   <span class="release-stage public"></span>
@@ -565,7 +588,9 @@
         <td><span class="xref">boolean</span></td>
         <td><em>disableMigration</em></td>
         <td>
-          
+          <p>Pass true to disable migration, false to keep it enabled.
+If not specified, it defaults to &quot;false&quot;.</p>
+
           
         </td>
       </tr>
@@ -580,7 +605,7 @@ the network owner gets out of the streaming range.
 </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L240">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L240">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_setNetOwner" data-uid="@altmp/altv-types.alt-server.Entity.setNetOwner">setNetOwner(Player, boolean)
   <span class="release-stage public"></span>
@@ -608,7 +633,8 @@ the network owner gets out of the streaming range.
         <td><a class="xref" href="alt-server.Player.html#_altmp_altv_types_alt_server_Player">Player</a></td>
         <td><em>player</em></td>
         <td>
-          
+          <p>The given player that will be set as new network owner.</p>
+
           
         </td>
       </tr>
@@ -616,7 +642,9 @@ the network owner gets out of the streaming range.
         <td><span class="xref">boolean</span></td>
         <td><em>disableMigration</em></td>
         <td>
-          
+          <p>Pass true to disable migration, false to keep it enabled.
+If not specified, it defaults to &quot;false&quot;.</p>
+
           
         </td>
       </tr>
@@ -631,7 +659,7 @@ the network owner gets out of the streaming range.
 </div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L225">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L225">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_setStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.setStreamSyncedMeta">setStreamSyncedMeta(string, any)
   <span class="release-stage public"></span>
@@ -659,7 +687,8 @@ the network owner gets out of the streaming range.
         <td><span class="xref">string</span></td>
         <td><em>key</em></td>
         <td>
-          
+          <p>The key of the value to store.</p>
+
           
         </td>
       </tr>
@@ -673,9 +702,12 @@ the network owner gets out of the streaming range.
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_setStreamSyncedMeta_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The given value will be shared with all clients in streaming range.</p>
+</div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L194">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L194">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_setSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.setSyncedMeta">setSyncedMeta(string, any)
   <span class="release-stage public"></span>
@@ -703,7 +735,8 @@ the network owner gets out of the streaming range.
         <td><span class="xref">string</span></td>
         <td><em>key</em></td>
         <td>
-          
+          <p>The key of the value to store.</p>
+
           
         </td>
       </tr>
@@ -717,9 +750,12 @@ the network owner gets out of the streaming range.
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_setSyncedMeta_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The given value will be shared with all clients.</p>
+</div>
   
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L163">View Source</a>
+    <a href="https://github.com/DRPFramework/altv-types-drp/blob/drp/./server/index.d.ts/#L163">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_getByID" data-uid="@altmp/altv-types.alt-server.Entity.getByID">getByID(number)
   <span class="release-stage public"></span>
@@ -747,7 +783,8 @@ the network owner gets out of the streaming range.
         <td><span class="xref">number</span></td>
         <td><em>id</em></td>
         <td>
-          
+          <p>The id of the entity.</p>
+
           
         </td>
       </tr>
@@ -764,7 +801,8 @@ the network owner gets out of the streaming range.
     <tbody>
       <tr>
         <td><a class="xref" href="alt-server.Entity.html#_altmp_altv_types_alt_server_Entity">Entity</a> | null</td>
-        <td></td>
+        <td><p>Entity if it was found, otherwise null.</p>
+</td>
       </tr>
     </tbody>
   </table>
