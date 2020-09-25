@@ -6,18 +6,18 @@ Client-side
 
 ```bash
 # With npm
-npm i -D @altvdrp/types-client @altvdrp/types-natives @altvdrp/types-webview
+npm i -D @altv-drp/types-client @altv-drp/types-natives @altv-drp/types-webview
 # With yarn
-yarn add -D @altvdrp/types-client @altvdrp/types-natives @altvdrp/types-webview
+yarn add -D @altv-drp/types-client @altv-drp/types-natives @altv-drp/types-webview
 ```
 
 Server-side
 
 ```bash
 # With npm
-npm i -D @altvdrp/types-server
+npm i -D @altv-drp/types-server
 # With yarn
-yarn add -D @altvdrp/types-server
+yarn add -D @altv-drp/types-server
 ```
 
 To make these types detectable, you've to add `typeRoots` property below to your project's `tsconfig.json`

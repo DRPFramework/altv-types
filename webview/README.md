@@ -5,9 +5,9 @@ This package contains types definitions for alt:V client-side WebView.
 
 ```bash
 # With npm
-npm i -D @altv/types-webview
+npm i -D @altv-drp/types-webview
 # With yarn
-yarn add -D @altv/types-webview
+yarn add -D @altv-drp/types-webview
 ```
 
 # Details

@@ -5,9 +5,9 @@ This package contains types definitions for alt:V client-side module.
 
 ```bash
 # With npm
-npm i -D @altv/types-client
+npm i -D @altv-drp/types-client
 # With yarn
-yarn add -D @altv/types-client
+yarn add -D @altv-drp/types-client
 ```
 
 # Details

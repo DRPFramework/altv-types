@@ -5,9 +5,9 @@ This package contains types definitions for alt:V client-side natives.
 
 ```bash
 # With npm
-npm i -D @altv/types-natives
+npm i -D @altv-drp/types-natives
 # With yarn
-yarn add -D @altv/types-natives
+yarn add -D @altv-drp/types-natives
 ```
 
 # Details

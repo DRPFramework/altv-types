@@ -5,9 +5,9 @@ This package contains types definitions for alt:V server-side module.
 
 ```bash
 # With npm
-npm i -D @altv/types-server
+npm i -D @altv-drp/types-server
 # With yarn
-yarn add -D @altv/types-server
+yarn add -D @altv-drp/types-server
 ```
 
 # Details
