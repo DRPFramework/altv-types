@@ -309,6 +309,10 @@ declare module "alt-server" {
     public setWeather(weatherHash: number): void;
 
     public spawn(x: number, y: number, z: number, delay: number): void;
+
+    public ban(): void;
+
+    public isBanned(): boolean;
   }
 
   export class Vehicle extends Entity {
